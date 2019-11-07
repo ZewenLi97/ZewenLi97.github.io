@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:700|Source+Serif+Pro&display=swap');
+
+body{
+   font-size: 16px;
+   font-family:  'Source Serif Pro', serif;
+   padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+
+main{
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "img          contact"
+  "img          skills"
+  "education   experience"
+}
+
+header {
+        float:inherit;
+      }
+
+nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #F1E0D6;
+      width: 100%;
+    }
+
+nav ul {
+        margin:0;
+        margin-left: 230px;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+      }
+nav li {
+        float: left;
+      }
+
+img{
+  border: 3px inset #F1E0D6;
+  margin-bottom: 10px;
+}
+
+section{
+  border: 2px;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+article{
+  border: 2px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+}
+
+.body{
+  max-width: 960px;
+  margin:0 auto;
+}
+
+#img{
+  grid-area: img;
+  border-bottom: 2px solid #F1E0D6;
+}
+#contact{
+  grid-area: contact;
+}
+
+#education{
+  grid-area: education;
+}
+
+#experience{
+  grid-area: experience;
+}
+
+#skills{
+  grid-area: skills;
+  border-bottom: 2px solid #F1E0D6;
+}
+
+a:link{
+  color: #1B1924;
+  display: block;
+  width: 120px;
+  text-align:center;
+  padding:4px;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #212624;
+}
+
+a:hover {
+ background-color: #BF9D7A;
+}
+
+
+a:active {
+  color: #DCD9C6;
+}
