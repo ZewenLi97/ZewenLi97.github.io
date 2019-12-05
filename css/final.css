@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Crimson+Text|Volkhov:700&display=swap');
+
+body{
+  font-size: :16px;
+  font-family: 'Crimson Text', serif;
+  background-color: #C9DFF2;
+  max-width: 960px;
+}
+
+h1, h2{
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  color: #012840
+}
+
+header {
+        float:inherit;
+        margin-left: 160px;
+      }
+
+nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #4378BE;
+      width: 160px;
+      height:100%;
+    }
+
+nav ul {
+        list-style: none;
+        margin:0;
+        padding: 0;
+        overflow: auto;
+      }
+nav li {
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+      }
+main{
+  margin-left: 160px;
+}
+
+section{
+        border: 2px;
+        margin-bottom: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        }
+
+
+.hobbies, #traveling, #cooking, #video{
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "h2           h2         h2"
+  "traveling_1  cooking_1  video_1"
+  "para         para       para"
+}
+
+.h2{
+  grid-area: h2;
+}
+
+.h_1{
+  grid-area: traveling_1;
+}
+
+.h_2{
+  grid-area: cooking_1;
+}
+
+.h_3{
+  grid-area: video_1;
+}
+
+.para{
+  grid-area: para;
+}
+
+
+#name{
+  font-family: 'Baskervville', serif;
+  font-size: 80px;
+  font-style: italic;
+  grid-area: name;
+}
+
+#message{
+  font-family:'Volkhov', serif;
+  font-size: 30px;
+  font-weight: 700;
+  grid-area: message;
+  color: #022E42;
+}
+
+#home_pic{
+  background-image: url('../photo/home_background_editted.jpg');
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas:
+  "name   ."
+  ".      message";
+}
+
+.contact{
+  background-image: url('../photo/contact_editted.jpg');
+}
+
+#info{
+  font-size: 20px;
+}
+
+.academic{
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  color: #012840;
+}
+
+a:link{
+  color: #1B1924;
+  display: block;
+  width: 200px;
+  text-align: justify;
+  padding:4px;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #212624;
+}
+
+a:hover {
+ background-color: #F2D8A7;
+}
+
+
+a:active {
+  color: #DCD9C6;
+}
